@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>10 Levels of Button Design</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+      font-family: "Poppins", sans-serif;
+    }
+    .btn {
+  padding: 14px 34px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(270deg, #ff6b6b, #f94d6a, #845ec2);
+  background-size: 600% 600%;
+  color: white;
+  cursor: pointer;
+  animation: gradientMove 3s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+    
+  </style>
+</head>
+<body>
+  <button class="btn">Click me</button>
+</body>
+</html>
